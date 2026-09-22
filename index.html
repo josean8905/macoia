@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macoia S.A.S. | Licencias de Construcción ConTech en Yopal</title>
+    <meta name="description" content="Macoia S.A.S. automatiza la gestión de licencias de construcción en Yopal, Casanare con tecnología BIM, auditoría paramétrica y modelado OpenBIM (ISO 19650).">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0F172A; /* Gris Pizarra Oscuro */
+            --bg-card: #1E293B;
+            --primary-emerald: #10B981; /* Verde Digital */
+            --accent-cyan: #06B6D4; /* Azul Cian */
+            --text-light: #F8FAFC;
+            --text-muted: #94A3B8;
+            --gold-accent: #F59E0B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Navegación */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--text-light);
+        }
+
+        .logo span {
+            color: var(--primary-emerald);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, var(--primary-emerald), #059669);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #334155;
+            color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5%;
+            text-align: center;
+            background: radial-gradient(circle at center, #1E293B 0%, #0F172A 100%);
+            border-bottom: 1px solid #334155;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: var(--accent-cyan);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+
+        .slogan {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Servicios / Metodología */
+        .services, .methodology {
+            padding: 80px 5%;
+        }
+
+        .methodology {
+            background-color: #0B1120;
+            border-top: 1px solid #334155;
+            border-bottom: 1px solid #334155;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-emerald);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--accent-cyan);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020617;
+            padding: 40px 5%;
+            text-align: center;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info strong {
+            color: var(--text-light);
+        }
+
+        .contact-links {
+            margin-bottom: 24px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero p {
+                font-size: 1.05rem;
+            }
+            nav a:not(.btn-cta) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MACOIA<span>.</span></div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#metodologia">Metodología</a>
+            <a href="https://wa.me/573134327714?text=Hola%2C%20quiero%20radicar%20un%20proyecto%20en%20Yopal" class="btn-cta">Radicar Proyecto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span class="slogan">See the unseen. Act with conviction. Impact progress.</span>
+        <h1>Licencias de Construcción <span>sin Reprocesos</span></h1>
+        <p>Transformamos la consultoría tradicional en Yopal. Utilizamos tecnología BIM, Inteligencia Artificial y auditoría paramétrica para garantizar que tu proyecto cumpla el 100% de la normativa (POT y NSR-10) antes de imprimir un solo plano.</p>
+        <div class="hero-actions">
+            <a href="https://wa.me/573134327714?text=Hola%2C%20quiero%20agendar%20una%20interventor%C3%ADa%20digital" class="btn-cta" style="font-size: 1.1rem; padding: 15px 35px;">Agendar Interventoría Digital</a>
+            <a href="#servicios" class="btn-cta btn-secondary" style="font-size: 1.1rem; padding: 15px 35px;">Ver Servicios</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2 class="section-title">Soluciones ConTech para el Casanare</h2>
+        <p class="section-subtitle">Gestión de licencias urbanísticas respaldada por tecnología, no solo por trámite manual.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🏢</div>
+                <h3>Gestión Exprés de Licencias</h3>
+                <p>Diseño, coordinación técnica y radicación ágil ante Curadurías Urbanas. Ideal para constructoras y personas naturales que buscan evitar meses de retrasos por actas de observaciones.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Auditoría Digital (Pre-Check)</h3>
+                <p>No modelamos desde cero; auditamos tu diseño. Corremos nuestro motor de reglas algorítmicas sobre tus planos para revisar aislamientos y áreas mínimas antes de que inviertas en la radicación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="methodology">
+        <h2 class="section-title">Metodología OpenBIM</h2>
+        <p class="section-subtitle">Cómo estructuramos tu proyecto como un activo digital, no solo como un set de planos.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Modelado OpenBIM (ISO 19650)</h3>
+                <p>Entregamos tu expediente como un activo digital (IFC4). No te vendemos planos muertos en 2D: estructuramos el ADN digital de tu edificio para que presupuestes y construyas sin colisiones.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="contact-info">
+            <p><strong>Macoia S.A.S. (Originador: OIA)</strong></p>
+            <p>Yopal, Casanare - Colombia</p>
+            <p>Dirigido por: José Antonio Bermúdez Montañez - Gerente General</p>
+        </div>
+        <div class="contact-links">
+            <a href="tel:+573134327714">📞 313 432 7714</a>
+            <a href="https://wa.me/573134327714">💬 Escríbenos por WhatsApp</a>
+        </div>
+        <p>&copy; 2026 Macoia S.A.S. Todos los derechos reservados. Operando bajo estándares internacionales ISO 19650.</p>
+    </footer>
+
+</body>
+</html>
