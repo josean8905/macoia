@@ -1,0 +1,36 @@
+# Revit
+*.rvt.lock
+*.rte.lock
+*_backup*.rvt
+*.rfa.lock
+*.skp
+
+# Office lock files
+~$*.xlsx
+~$*.docx
+~$*.pptx
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (marketing / landing page tooling, if any)
+node_modules/
+npm-debug.log*
+
+# Temp / scratch
+*.tmp
+*.bak
+/tmp/
