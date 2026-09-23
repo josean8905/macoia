@@ -3,10 +3,15 @@
 Archivos `.txt` de parámetros compartidos de Revit (formato nativo de Revit, prefijo `GMY`/`SG` heredado del estándar de Singapur — CORENET X), base para inyectar el sistema de parámetros IFC-SG/CORENET-X en la plantilla arquitectónica de Macoia (`OIA-TEM-ARQ_2026-V1.rte`).
 
 - **`OIA_IFC+SG_SharedParameters_R2024.txt`** — archivo de parámetros compartidos ya preparado y con GUIDs propios de OIA/Macoia (revisión 2024). Es el archivo que se importa en Revit vía *Manage → Shared Parameters*.
-- **`IFC Shared Parameters-RevitIFCBuiltIn_ALL.txt`** — listado completo de los parámetros integrados (built-in) de instancia del exportador nativo de IFC de Revit, exportado como referencia.
-- **`IFC Shared Parameters-RevitIFCBuiltIn-Type_ALL.txt`** — el mismo listado a nivel de tipo (Type).
 
-Estos dos últimos existen para poder cotejar, parámetro por parámetro, cuál viene nativo de Revit/Autodesk (`RevitIFCBuiltIn`) contra cuál hay que añadir vía `SGPset_*` (ver `bim-standards/ifc-mapping/`), y así evitar duplicar parámetros al inyectar el esquema en la plantilla.
+## Listados de referencia (no versionados aquí)
+
+Para cotejar, parámetro por parámetro, cuál viene nativo de Revit/Autodesk (`RevitIFCBuiltIn`) contra cuál hay que añadir vía `SGPset_*` (ver `bim-standards/ifc-mapping/`) y así evitar duplicar parámetros al inyectar el esquema en la plantilla, existen dos listados completos del exportador nativo de IFC de Revit (instancia y tipo, ~700 KB cada uno):
+
+- `IFC Shared Parameters-RevitIFCBuiltIn_ALL.txt` (nivel instancia)
+- `IFC Shared Parameters-RevitIFCBuiltIn-Type_ALL.txt` (nivel tipo)
+
+Por su tamaño y por ser una exportación estática de Autodesk (regenerable en cualquier momento desde Revit, *File → Import/Export Settings → IFC Options*), no se versionan en este repositorio; viven como referencia en el proyecto "Macoia" de Claude, consultables ahí cuando se necesite cotejar un parámetro puntual.
 
 ## Orden de trabajo decidido
 
