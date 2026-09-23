@@ -1,0 +1,661 @@
+PropertySet:	Pset_CoveringCommon	I	IfcCovering
+FireRating	Label
+PropertySet:	Pset_DoorCommon	I	IfcDoor
+FireExit	Boolean
+FireRating	Label
+PropertySet:	Pset_FlowMeterOccurrence	I	IfcFlowMeter
+Purpose	Label
+PropertySet:	Pset_StairCommon	I	IfcStair
+FireExit	Boolean
+PropertySet:	Pset_StairFlightCommon	I	IfcStairFlight
+NumberOfRiser	Integer
+NumberOfTreads	Integer
+RiserHeight	Length
+TreadLength	Length
+PropertySet:	Pset_TankTypeCommon	I	IfcTank
+EffectiveCapacity	Volume
+NominalCapacity	Volume
+PropertySet:	SGPset_AirTerminal	I	IfcAirTerminal
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPset_Beam	I	IfcBeam
+BeamSpanType	Label
+ConstructionMethod	Label
+MechanicalConnectionType	Label
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+SectionFabricationMethod	Label
+PropertySet:	SGPset_BeamDimension	I	IfcBeam
+Depth	Length
+Mark	Label
+MemberSection	Label
+Width	Length
+PropertySet:	SGPset_BeamReinforcement	I	IfcBeam
+BottomLeft	Label
+BottomMiddle	Label
+BottomRight	Label
+PrefabricatedReinforcementCage	Boolean
+SideBar	Label
+StirrupsLeft	Label
+StirrupsMiddle	Label
+StirrupsRight	Label
+StirrupsTypeLeft	Label
+StirrupsTypeMiddle	Label
+StirrupsTypeRight	Label
+TopLeft	Label
+TopMiddle	Label
+TopRight	Label
+PropertySet:	SGPset_Building	I	IfcBuilding
+OwnerBuiltOwnerStay	Boolean
+ProjectDevelopmentType	Label
+PropertySet:	SGPset_BuildingElementProxy	I	IfcBuildingElementProxy
+BarrierFreeAccessibility	Boolean
+BicycleRack_Type	Label
+CarParking_ServedByCarLift	Boolean
+Egress	Boolean
+FamilyLot	Boolean
+FireExtinguisherRating	Label
+Ingress	Boolean
+LotNumber	Label
+MechanisedParkingSystem	Boolean
+MountingHeight	Length
+OpenAtGrade	Boolean
+ParkingUse	Label
+Perforated	Boolean
+VehicleType	Label
+Vehicular	Boolean
+PropertySet:	SGPset_BuildingElementProxyDimension	I	IfcBuildingElementProxy
+Depth	Length
+Length	Length
+Mark	Label
+SHDLevel_SPT_MoreThan_100N	Real
+SHDLevel_SPT_MoreThan_60N	Real
+TerminationLevel	Real
+TopLevel	Real
+Width	Length
+PropertySet:	SGPset_CivilElement	I	IfcCivilElement
+ConstructionMethod	Label
+DesignedVehicleMass	Real
+Egress	Boolean
+Ingress	Boolean
+KerbType	Label
+LoadBearing	Boolean
+Public	Boolean
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPSet_CivilElement	I	IfcCivilElement
+RoadCategory	Label
+PropertySet:	SGPset_CivilElementDimension	I	IfcCivilElement
+Diameter	Length
+Gradient	Label
+Height	Length
+Length	Length
+SystemName	Label
+SystemType	Label
+Thickness	Length
+Width	Length
+PropertySet:	SGPset_Column	I	IfcColumn
+ConstructionMethod	Label
+MechanicalConnectionType	Label
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+SectionFabricationMethod	Label
+PropertySet:	SGPset_ColumnDimension	I	IfcColumn
+Breadth	Length
+Diameter	Length
+EndStorey	Label
+Mark	Label
+MemberSection	Label
+StartingStorey	Label
+Width	Length
+PropertySet:	SGPset_ColumnReinforcement	I	IfcColumn
+MainRebar	Label
+PrefabricatedReinforcementCage	Boolean
+Stirrups	Label
+StirrupsType	Label
+PropertySet:	SGPset_ColumnStructuralLoad	I	IfcColumn
+WorkingLoad_DA1-1	Integer
+WorkingLoad_DA1-2	Integer
+PropertySet:	SGPset_Covering	I	IfcCovering
+ConstructionMethod	Label
+ExternalReference	Label
+Watertight	Boolean
+PropertySet:	SGPset_Damper	I	IfcDamper
+FireRating	Label
+PropertySet:	SGPset_DiscreteAccessory	I	IfcDiscreteAccessory
+IsCommon	Boolean
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPset_DistributionChamberElement	I	IfcDistributionChamberElement
+ID	Label
+Status	Label
+SystemName	Label
+SystemType	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_DistributionChamberElementDimension	I	IfcDistributionChamberElement
+Depth	Length
+Diameter	Length
+Height	Length
+InvertLevel	Real
+Length	Length
+TopLevel	Real
+Width	Length
+PropertySet:	SGPset_Door	I	IfcDoor
+AirTight	Boolean
+FireAccessOpening	Boolean
+MainEntrance	Boolean
+OneWayLockingDevice	Boolean
+OperationType	Label
+PowerOperated	Boolean
+SelfClosing	Boolean
+VisionPanel	Boolean
+VolumeControlled	Boolean
+PropertySet:	SGPset_DoorDimension	I	IfcDoor
+ClearHeight	Length
+ClearWidth	Length
+OverallWidth	Length
+StructuralHeight	Length
+StructuralWidth	Length
+Thickness	Length
+PropertySet:	SGPset_DuctFitting	I	IfcDuctFitting
+ConstructionMethod	Label
+PreInsulated	Boolean
+SystemName	Label
+SystemType	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_DuctSegment	I	IfcDuctSegment
+ConstructionMethod	Label
+PreInsulated	Boolean
+SystemName	Label
+SystemType	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_FireSuppressionTerminal	I	IfcFireSuppressionTerminal
+Hose_NominalDiameter	Label
+Hose_NominalDiameter	Length
+ID	Label
+Private	Boolean
+Public	Boolean
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPset_FlowMeter	I	IfcFlowMeter
+Capacity	VolumetricFlowRate
+SystemName	Label
+SystemType	Label
+UnitNumber	Label
+UnitNumberTag	Boolean
+WaterSupplySource	Label
+PropertySet:	SGPset_FlowMeterDimension	I	IfcFlowMeter
+Diameter	Length
+Length	Length
+PropertySet:	SGPset_Footing	I	IfcFooting
+DA1-1_BearingCapacity	Integer
+DA1-2_BearingCapacity	Integer
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+SoilVerificationTest	Label
+PropertySet:	SGPset_FootingDimension	I	IfcFooting
+Breadth	Length
+Depth	Length
+Mark	Label
+Width	Length
+PropertySet:	SGPset_FootingReinforcement	I	IfcFooting
+BottomDistribution	Label
+BottomMain	Label
+SideBar	Label
+Stirrups	Label
+StirrupsType	Label
+TopDistribution	Label
+TopMain	Label
+PropertySet:	SGPset_FoundationStructuralLoad	I	IfcFooting
+WorkingLoad_DA1-1	Integer
+WorkingLoad_DA1-2	Integer
+PropertySet:	SGPset_Furniture	I	IfcFurniture
+SeatingCapacity	Label
+PropertySet:	SGPset_GeographicElement	I	IfcGeographicElement
+ApprovedSoilMixture	Boolean
+ApprovedTurfSpecies	Boolean
+BroadLandUse	Label
+CarparkProvision	Boolean
+Compensated	Boolean
+Encroachment	Boolean
+HedgeNumber	Label
+ReasonForRemoval	Label
+Roadside	Boolean
+ShrubSpecies	Label
+SingleStem	Boolean
+Species	Label
+Status	Label
+TreeNumber	Label
+TreeSize	Label
+Turf	Boolean
+TurfSpecies	Label
+VacantLand	Boolean
+PropertySet:	SGPset_GeographicElementDimension	I	IfcGeographicElement
+Area	Area
+Girth	Length
+Height	Length
+PropertySet:	SGPset_Interceptor	I	IfcInterceptor
+ComplyToPUBStandardDrawing	Boolean
+ReferToDrawingNumber	Label
+PropertySet:	SGPset_InterceptorDimension	I	IfcInterceptor
+Diameter	Length
+Height	Length
+InvertLevel	Real
+Length	Length
+SystemName	Label
+SystemType	Label
+TopLevel	Real
+TradeEffluent	Boolean
+Width	Length
+PropertySet:	SGPset_Material	I	IfcBeam
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcCivilElement
+Material	Label
+PropertySet:	SGPset_Material	I	IfcColumn
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcCovering
+Material	Label
+PropertySet:	SGPset_Material	I	IfcDistributionChamberElement
+Material	Label
+PropertySet:	SGPset_Material	I	IfcDoor
+Material	Label
+PropertySet:	SGPset_Material	I	IfcFooting
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcPile
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcPipeSegment
+Material	Label
+PropertySet:	SGPset_Material	I	IfcRailing
+Material	Label
+PropertySet:	SGPset_Material	I	IfcRamp
+Material	Label
+PropertySet:	SGPset_Material	I	IfcRoof
+Material	Label
+PropertySet:	SGPset_Material	I	IfcSlab
+Material	Label
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcSpace
+Material	Label
+PropertySet:	SGPset_Material	I	IfcStairFlight
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcTank
+BasePlateMaterial 	Label
+PropertySet:	SGPset_Material	I	IfcWall
+MaterialGrade	Label
+PropertySet:	SGPset_Material	I	IfcWasteTerminal
+Material	Label
+PropertySet:	SGPset_Material	I	IfcWindow
+Material	Label
+PropertySet:	SGPset_OpeningElement	I	IfcOpeningElement
+FireAccessOpening	Boolean
+PropertySet:	SGPset_Pile	I	IfcPile
+BoreholeRef	Label
+ConstructionMethod	Label
+DA1-1_CompressionCapacity	Integer
+DA1-1_TensionCapacity	Integer
+DA1-2_CompressionCapacity	Integer
+DA1-2_TensionCapacity	Integer
+MinEmbedmentIntoBearingLayer_SPT_MoreThan_100N	Real
+MinEmbedmentIntoBearingLayer_SPT_MoreThan_60N	Real
+MinRockSocketingLength	Real
+ReinforcementSteelGrade	Label
+StructuralCompressionCapacity	Integer
+StructuralTensionCapacity	Integer
+PropertySet:	SGPset_PileDimension	I	IfcPile
+Breadth	Length
+CutOffLevel_SHD	Real
+Diameter	Length
+Length	Length
+Mark	Label
+MemberSection	Label
+ToeLevel_SHD	Real
+Width	Length
+PropertySet:	SGPset_PileReinforcement	I	IfcPile
+MainRebar	Label
+PileType	Label
+ReinforcementLength	Label
+Stirrups	Label
+PropertySet:	SGPset_PileStructuralLoad	I	IfcPile
+DA1-1_CompressionDesignLoad	Integer
+DA1-1_TensionDesignLoad	Integer
+DA1-2_CompressionDesignLoad	Integer
+DA1-2_TensionDesignLoad	Integer
+NegativeSkinFriction	Integer
+PropertySet:	SGPset_PilingDesignParameter	I	IfcBuilding
+EndBearingR4DesignFactor	Real
+NoOfNonDestructiveTestPile	Integer
+NoOfULTTest	Integer
+NoOfWorkingLoadTest_MaintainedLoadTest	Integer
+NoOfWorkingLoadTest_RapidLoadTest	Integer
+PileModelFactor	Real
+ShaftR4DesignFactor	Real
+PropertySet:	SGPset_PipeFitting	I	IfcPipeFitting
+ConstructionMethod	Label
+PreInsulated	Boolean
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPset_PipeFittingDimension	I	IfcPipeFitting
+InnerDiameter	Length
+NominalDiameter	Length
+OuterDiameter	Length
+Thickness	Length
+PropertySet:	SGPset_PipeSegment	I	IfcPipeSegment
+BeddingType	Label
+ConstructionMethod	Label
+DemountableStructureAbovePipe	Boolean
+Gradient	Label
+Perforated	Boolean
+PreInsulated	Boolean
+SystemName	Label
+SystemType	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_PipeSegmentDimension	I	IfcPipeSegment
+InnerDiameter	Length
+Length	Length
+Thickness	Length
+PropertySet:	SGPset_PrecastConcreteElementGeneral	I	IfcColumn
+ArrangementType	Label
+PropertySet:	SGPset_Pump	I	IfcPump
+Capacity	VolumetricFlowRate
+Duty	Boolean
+PumpHead	Real
+Standby	Boolean
+SystemName	Label
+SystemType	Label
+PropertySet:	SGPset_Railing	I	IfcRailing
+IsLaminated	Boolean
+SafetyBarrier	Boolean
+TypeOfBarrier	Label
+PropertySet:	SGPset_RailingDimension	I	IfcRailing
+Height	Length
+PropertySet:	SGPset_Ramp	I	IfcRamp
+Accessway	Boolean
+BarrierFreeAccessibility	Boolean
+Egress	Boolean
+Ingress	Boolean
+TransitionRamp	Boolean
+Vehicular	Boolean
+PropertySet:	SGPset_RampDimension	I	IfcRamp
+Gradient	Label
+Width	Length
+PropertySet:	SGPset_Roof	I	IfcRoof
+ConstructionMethod	Label
+PropertySet:	SGPset_SanitaryTerminal	I	IfcSanitaryTerminal
+AmbulantDisabled	Boolean
+BarrierFreeAccessibility	Boolean
+ChildrenFriendly	Boolean
+Mounting	Label
+PanMounting	Label
+SystemName	Label
+SystemType	Label
+ToiletPanType	Label
+Waterless	Boolean
+WELS	Boolean
+PropertySet:	SGPset_ShadingDevice	I	IfcShadingDevice
+ShadingDevice	Label
+PropertySet:	SGPset_Site	I	IfcSite
+NumberOfWorkers	Integer
+PropertySet:	SGPset_Slab	I	IfcSlab
+Accreditation_MAS	Boolean
+ConstructionMethod	Label
+LatticeGirderReinforcement	Boolean
+LoadBearing	Boolean
+MechanicalConnectionType	Label
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+ShelterUsage	Boolean
+SlabType	Label
+TypeDesignator	Label
+PropertySet:	SGPset_SlabDimension	I	IfcSlab
+Mark	Label
+Thickness	Length
+PropertySet:	SGPset_SlabReinforcement	I	IfcSlab
+BottomDistribution_nominal	Label
+BottomMain_nominal	Label
+Stirrups	Label
+StirrupsType	Label
+TopDistribution_nominal	Label
+TopMain_nominal	Label
+WeldedMesh	Boolean
+PropertySet:	SGPset_Space	I	IfcSpace
+Accreditation_MAS	Boolean
+AmbulantDisabled	Boolean
+BarrierFreeAccessibility	Boolean
+ChildrenFriendly	Boolean
+ConstructionMethod	Label
+CValue	Label
+EffectiveCapacity	Volume
+ElderlyFriendly	Boolean
+EmergencyVoiceCommunicationSystem	Label
+FireDetectionAndSuppressionSystem	Label
+FireEmergencyVentilationMode	Label
+FireExit	Boolean
+FullyCoveredWithTreesShrubs	Boolean
+HearingEnhancement	Boolean
+IsPotable	Boolean
+LargerAccessible	Boolean
+LoadingCapacity	Real
+MechanicalConnectionType	Label
+NominalCapacity	Volume
+OccupancyLoad	Real
+OccupancyType	Label
+ParkingType	Label
+PurposeGroup	Label
+RefuseOutput	Real
+Retrofit	Boolean
+SmokeControlSystem	Label
+SoundPowerLevel	Label
+SoundPressureLevel	Label
+SpaceName	Label
+StepRampAccess	Boolean
+TwentyFourHourMannedStation	Boolean
+UnitNumber	Label
+VentilationMode	Label
+VentilationType	Label
+Volume	Volume
+PropertySet:	SGPset_SpaceArea_Connectivity	I	IfcSpace
+ACN_ActivityGeneratingUseType	Label
+ACN_CloseTime	Label
+ACN_ConnectivityType	Label
+ACN_IsOpen24HoursToPublic	Boolean
+ACN_IsPavingSpecified	Boolean
+ACN_OpenTime	Label
+ACN_PavingSpecification	Label
+PropertySet:	SGPset_SpaceArea_GFA	I	IfcSpace
+AGF_BonusGFAType	Label
+AGF_BuildingTypology	Label
+AGF_DevelopmentUse	Label
+AGF_Name	Label
+AGF_Note	Label
+AGF_SupportingFacility	Label
+AGF_UnitNumber	Label
+AGF_UseQuantum	Label
+PropertySet:	SGPset_SpaceArea_Landscape	I	IfcSpace
+ALS_GreeneryFeatures	Label
+ALS_LandscapeType	Label
+ALS_Species	Label
+ALS_Status	Label
+PropertySet:	SGPset_SpaceArea_Strata	I	IfcSpace
+AST_AreaType	Label
+AST_Extg_StrataLotNumber	Label
+AST_LegalArea	Integer
+AST_Prop_StrataLotNumber	Label
+PropertySet:	SGPset_SpaceArea_Verification	I	IfcSpace
+AVF_IncludeAsGFA	Boolean
+PropertySet:	SGPset_SpaceDimension	I	IfcSpace
+Area	Area
+ChamferRadius	Length
+Height	Length
+InnerLength	Length
+InnerWidth	Length
+InternalLength	Length
+InternalWidth	Length
+OuterLength	Length
+OuterWidth	Length
+Thickness	Length
+Width	Length
+PropertySet:	SGPset_Stair	I	IfcStair
+Mark	Label
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+SectionFabricationMethod	Label
+PropertySet:	SGPset_StairDimension	I	IfcStair
+MemberSection	Label
+Thickness	Length
+Width	Length
+PropertySet:	SGPset_Stairflight	I	IfcStairFlight
+ConstructionMethod	Label
+PropertySet:	SGPset_StairFlight	I	IfcStairFlight
+ConstructionMethod	Label
+MechanicalConnectionType	Label
+PropertySet:	SGPset_StairReinforcement	I	IfcStair
+BottomDistribution	Label
+BottomMain	Label
+TopDistribution	Label
+TopMain	Label
+PropertySet:	SGPset_StairSteelConnection	I	IfcStair
+ConnectionDetailsBottom	Label
+ConnectionDetailsTop	Label
+ConnectionTypeBottom	Label
+ConnectionTypeTop	Label
+PropertySet:	SGPset_SteelConnection	I	IfcBeam
+LeftConnectionDetail	Label
+LeftConnectionType	Label
+RightConnectionDetail	Label
+RightConnectionType	Label
+SpliceConnection	Label
+PropertySet:	SGPset_SteelConnection	I	IfcColumn
+ConnectionDetailsBottom	Label
+ConnectionDetailsTop	Label
+ConnectionTypeBottom	Label
+ConnectionTypeTop	Label
+SpliceDetail	Label
+PropertySet:	SGPset_Tank	I	IfcTank
+BasePlateThickness	Length
+ColourCode	Label
+CompactionRatio	Real
+EquipmentType	Label
+HookUpPoint	Label
+IsPotable	Boolean
+Litre	Real
+TailGateOrientation	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_TankDimension	I	IfcTank
+Diameter	Length
+Height	Length
+Length	Length
+Thickness	Length
+Width	Length
+PropertySet:	SGPset_TransportElement	I	IfcTransportElement
+BarrierFreeAccessibility	Boolean
+FireFightingLift	Boolean
+LiftType	Label
+PropertySet:	SGPset_TransportElementDimension	I	IfcTransportElement
+ClearDepth	Length
+ClearHeight	Length
+ClearWidth	Length
+Length	Length
+Width	Length
+PropertySet:	SGPset_UnitaryControlElement	I	IfcUnitaryControlElement
+Purpose	Label
+PWCS_Flushing	Boolean
+PropertySet:	SGPset_UnitaryEquipment	I	IfcUnitaryEquipment
+AI_AmmoniaAndAmmonium	Label
+AI_Antimony	Label
+AI_Arsenic	Label
+AI_Benzene	Label
+AI_Cadmium	Label
+AI_CarbonMonoxide	Label
+AI_Chlorine	Label
+AI_Copper	Label
+AI_DioxinsAndFurans	Label
+AI_EthyleneOxide	Label
+AI_FlourineAndHydrofluoricAcid	Label
+AI_Formaldehyde	Label
+AI_HydrogenChloride	Label
+AI_HydrogenSulphide	Label
+AI_Lead	Label
+AI_Mercury	Label
+AI_OxidesOfNitrogen	Label
+AI_ParticulateSubstances	Label
+AI_StyreneMonomer	Label
+AI_SulphurDioxide	Label
+AI_SulphurTrioxideAndAcidGases	Label
+AI_SulphurTrioxideOrSulphuricAcidMist	Label
+AI_VinylChlorideMonomer	Label
+TED_Arsenic	Label
+TED_Barium	Label
+TED_Beryllium	Label
+TED_BiochemicalOxygenDemand	Label
+TED_Boron	Label
+TED_Cadmium	Label
+TED_Calcium	Label
+TED_ChemicalOxygenDemand	Label
+TED_Chloride	Label
+TED_Chromium	Label
+TED_Colour	Label
+TED_Copper	Label
+TED_Cyanide	Label
+TED_Detergent	Label
+TED_GreaseAndOil	Label
+TED_Iron	Label
+TED_Lead	Label
+TED_Magnesium	Label
+TED_Manganese	Label
+TED_Mercury	Label
+TED_MetalsInTotal	Label
+TED_Nickel	Label
+TED_Nitrate	Label
+TED_PhenolicCompound	Label
+TED_Phosphate	Label
+TED_PHValue	Label
+TED_Selenium	Label
+TED_Silver	Label
+TED_Sulphate	Label
+TED_Sulphide	Label
+TED_TemperatureOfDischarge	Label
+TED_Tin	Label
+TED_TotalDissolvedSolid	Label
+TED_TotalSuspendedSolid	Label
+TED_Zinc	Label
+PropertySet:	SGPset_Valve	I	IfcValve
+SystemName	N.A
+SystemType	N.A
+PropertySet:	SGPset_Wall	I	IfcWall
+ArrangementType	Label
+BeamFaçade	Boolean
+ConstructionMethod	Label
+DoubleBayFaçade	Boolean
+IsExternal	Boolean
+IsPartyWall	Boolean
+LoadBearing	Boolean
+MechanicalConnectionType	Label
+PrefabricatedReinforcementCage	Boolean
+PrefinishedFaçade	Boolean
+ReferTo2DDetail	Label
+ReinforcementSteelGrade	Label
+ShelterUsage	Boolean
+PropertySet:	SGPset_WallDimension	I	IfcWall
+Mark	Label
+Thickness	Length
+PropertySet:	SGPset_WallReinforcement	I	IfcWall
+HorizontalRebar	Label
+Stirrups	Label
+StirrupsType	Label
+VerticalRebar	Label
+PropertySet:	SGPset_WallStructuralLoad	I	IfcWall
+WorkingLoad_DA1-1	Integer
+WorkingLoad_DA1-2	Integer
+PropertySet:	SGPset_WasteTerminal	I	IfcWasteTerminal
+SystemName	Label
+SystemType	Label
+TradeEffluent	Boolean
+PropertySet:	SGPset_Window	I	IfcWindow
+FireAccessOpening	Boolean
+PercentageOfOpening	Real
+SafetyBarrierHeight	Length
+PropertySet:	SGPset_WindowDimension	I	IfcWindow
+InnerDiameter	Length
+OuterDiameter	Length
+StructuralHeight	Length
+StructuralWidth	Length
