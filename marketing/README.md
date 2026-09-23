@@ -1,36 +1,43 @@
-# Macoia — Punto de partida para Marketing
+# Marketing Macoia — Empieza aquí
 
-Este documento reúne todo lo que ya existe para arrancar la estrategia de contacto directo con propietarios y apoderados en Yopal. Léelo en este orden.
+Este documento es el punto de partida. No necesitas saber usar GitHub: solo haz click en los links de abajo, en orden. Cada uno abre una página que puedes leer directo en el navegador — no hay que instalar nada ni descargar nada para leerlos.
 
-## 1. Contexto de la estrategia
+Si en algún momento no sabes qué hacer, escríbele a José. Ningún documento aquí reemplaza esa consulta.
 
-- **ICP y segmentación:** `marketing/` (ver también el histórico de decisiones — pregúntale a José si no tienes acceso al documento de estrategia de contenido original).
-- **Hallazgo clave con datos reales:** de los últimos ~37 trámites en la Curaduría 1 de Yopal, ~33 fueron solicitados por **personas naturales**, no por empresas. Esto valida que el segmento prioritario es propietario individual, no solo constructoras.
-- **Guardrail de copy que nunca se debe romper:** nunca prometer "sin rechazos" ni "cero rechazos" — la curaduría conserva criterio normativo propio que no se puede garantizar. Frase aprobada: *"eliminamos las causas de rechazo que sí dependen de la coordinación del proyecto"*.
+## Los 4 documentos, en el orden en que debes leerlos
 
-## 2. Piezas gráficas listas para usar
+### 1️⃣ Este documento (README)
+Ya estás aquí. Te dice qué leer y en qué orden.
 
-Ver **[marketing/macoia-marketing-pack.md](./macoia-marketing-pack.md)** — ahí están los 4 links directos a Canva (Email y WhatsApp, para Propietarios y para Apoderados/tramitadores), con la paleta de marca oficial.
+### 2️⃣ [Piezas de marketing y links de Canva](./macoia-marketing-pack.md)
+Aquí están los 4 diseños ya hechos (para Propietarios y para Apoderados, en Email y en WhatsApp), con el link directo para abrir cada uno en Canva y descargarlo.
+**Ábrelo cuando necesites encontrar o descargar una pieza.**
 
-Carpeta completa en Canva: https://www.canva.com/folder/FAHVlxLkJBM
+### 3️⃣ [Manual de envío — cómo y cuándo enviar cada pieza](./manual-envio-piezas.md)
+Paso a paso: cómo saber si tu contacto es Propietario o Apoderado, cómo descargar la pieza correcta, qué escribir, y en qué día y hora exacta se envía cada mensaje.
+**Ábrelo antes de enviar cualquier pieza a cualquier contacto.**
 
-## 3. Cómo enviarlas
+### 4️⃣ [Guion — qué decir cuando alguien responde que sí](./guion-respuestas-positivas.md)
+Qué preguntas hacer, qué ofrecer, y cómo entregarle el contacto a José, listo para agendar.
+**Ábrelo apenas alguien te conteste con interés — no antes.**
 
-Ver **[marketing/manual-envio-piezas.md](./manual-envio-piezas.md)** — paso a paso para exportar cada pieza, qué escribir en el cuerpo del correo/WhatsApp, y la cadencia de envío (día y hora exactos, con horarios a evitar en Yopal).
+## Lo esencial en una frase (si solo lees esto)
 
-## 4. Sitio web
+Identifica si el contacto es Propietario o Apoderado (doc 3) → envía la pieza correspondiente el día y la hora que indica la tabla (doc 3) → si responde con interés, sigue el guion y entrégaselo a José (doc 4) → nunca prometas "sin rechazos" ni "cero rechazos" (está en los 3 documentos, es la única regla que nunca se cambia).
 
-Landing page en `index.html` (raíz del repo), pendiente de activar como GitHub Pages en Settings → Pages del repositorio. Una vez activo: `https://josean8905.github.io/macoia/`.
+## Otras cosas que existen pero no son documentos de trabajo diario
 
-## 5. Lo que falta / no está listo todavía
+- **La página web de Macoia** (`index.html`, en la raíz del repositorio): es el sitio que ven los clientes, no una guía para ti.
+- **Carpeta completa en Canva:** https://www.canva.com/folder/FAHVlxLkJBM — ahí están las piezas originales, editables.
 
-- **Contactos de propietarios y apoderados:** José los está extrayendo manualmente; no hay una base de datos centralizada todavía. Coordinar con él antes de asumir que existe una lista.
-- **Segmento apoderados/tramitadores:** sin investigar todavía quiénes son específicamente en Yopal.
-- **Piezas de topógrafos** (alianza de referidos): decisión de omitirlas por ahora (2026-09-21).
-- **Serie de TikTok "Construyendo mi casa":** episodios en producción, no cubiertos en este documento — preguntar a José por el estado actual.
-
-## 6. Contacto de la empresa
+## Contacto de la empresa
 
 - Teléfono / WhatsApp: 313 432 7714
 - Ubicación: Yopal, Casanare, Colombia
 - Responsable: José Antonio Bermúdez Montañez — Gerente General
+
+## Cosas que todavía no están listas (para que no las busques)
+
+- No existe todavía una base de datos centralizada de contactos — José los está extrayendo manualmente.
+- El segmento de Apoderados/tramitadores aún no tiene una lista de quiénes son específicamente en Yopal.
+- Las piezas para topógrafos y la serie de TikTok no están cubiertas en estos documentos — pregúntale a José por su estado si te las mencionan.
