@@ -1,8 +1,8 @@
 ---
 documento: Paso a paso para revisiones de planchas (radicación y actas de observaciones)
 codigo: OIA-PRO-ARQ-REV
-version: 1.0.0
-fecha: 2026-10-01
+version: 2.0.0
+fecha: 2026-10-07
 estado: Vigente
 plantilla: OIA-TEM-ARQ_2026-V1.rte
 rotulos: OIA_Rotulo_Pliego (100×70) · OIA_Rotulo_MedioPliego (70×50)
@@ -112,17 +112,20 @@ Por cada observación del acta:
 
 ### Paso 9 · Exportar los PDF y llevarlos al CDE
 1. **Archivo › Exportar › PDF**, seleccionando las planchas de la entrega.
-2. Nombre de cada archivo: `{ISO_Codigo_Documento}_R{N.º revisión con 2 dígitos}.pdf`
-   - Ejemplo: `PRF01-OIA-ZZ-XX-DR-A-0101_R02.pdf`
+2. Nombre de cada archivo (ver `OIA-PRO-BIM-NOM`): `{PROYECTO}-OIA-ZZ-{NIVEL}-PLN-ARQ-{N.º plancha}_{ESTADO}_C{N.º revisión con 2 dígitos}.pdf`
+   - Radicación (revisión 1): `PRF01-OIA-ZZ-01-PLN-ARQ-A101_A1_C01.pdf`
+   - Respuesta acta N.º 1 (revisión 2): `PRF01-OIA-ZZ-01-PLN-ARQ-A101_B1_C02.pdf`
+   - Planos aprobados (revisión n): `PRF01-OIA-ZZ-01-PLN-ARQ-A101_CR_C0n.pdf`
 3. Guardar en el CDE:
-   - Mientras se corrige → `01_WIP`.
-   - Una vez emitida → `03_PUBLISHED` (el archivo ya no se edita; una corrección nueva es una revisión nueva).
+   - Mientras se corrige → `1. WIP` (sin sufijo de estado).
+   - Una vez emitida → `3. PUBLISHED/03. PLANOS_ARQ` (el archivo ya no se edita; una corrección nueva es una revisión nueva).
+   - La emisión anterior se mueve a `4. ARCHIVED`.
 
 ### Paso 10 · Planos aprobados
 Cuando la curaduría expide la resolución de licencia:
 1. Crear la revisión `PLANOS APROBADOS – RES. XXXX DE AAAA` con la fecha de la resolución.
 2. Asignarla a todas las planchas (Paso 3) y emitirla.
-3. Exportar el juego completo a `03_PUBLISHED` y copiar el modelo a `04_ARCHIVED` como versión aprobada.
+3. Exportar el juego completo a `3. PUBLISHED` con estado `CR` y copiar el modelo a `4. ARCHIVED` como versión aprobada (`…-MOD-ARQ-…_CR_C0n.rvt`).
 
 ---
 
@@ -151,7 +154,7 @@ Cuando la curaduría expide la resolución de licencia:
 
 - Confirmar con la curaduría si en las respuestas a actas piden el juego completo o solo las planchas modificadas (cambia el Paso 7).
 - Crear la *Lista de planos* con revisión actual dentro de la plantilla.
-- Evaluar un botón pyRevit que exporte los PDF con el nombre `{ISO_Codigo_Documento}_RNN.pdf` directo a la carpeta del CDE.
+- Evaluar un botón pyRevit que exporte los PDF con el nombre `{PROYECTO}-OIA-ZZ-{NIVEL}-PLN-ARQ-{plancha}_{ESTADO}_CNN.pdf` directo a la carpeta del CDE.
 
 ---
 
@@ -168,3 +171,4 @@ Cada cambio: se actualiza `version` y `fecha` en el encabezado, se agrega una fi
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 1.0.0 | 2026-10-01 | Versión inicial: convención de revisiones por proyecto para radicación, actas de observaciones y planos aprobados; nombre de PDF y flujo CDE. |
+| 2.0.0 | 2026-10-07 | Nombre de PDF alineado con `OIA-PRO-BIM-NOM` (tipo antes de función, sufijo `_ESTADO_C0n`); carpetas del CDE `1. WIP`, `3. PUBLISHED`, `4. ARCHIVED`. |
